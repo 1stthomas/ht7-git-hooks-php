@@ -4,4 +4,10 @@ source "$(pwd)/functions/base.sh"
 
 
 print_intro
-print_commands
+
+for (( ; ; )); do
+    print_commands
+    process_selection $?
+    # "$(print_commands)"
+    # process_selection $?
+done
