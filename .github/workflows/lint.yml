@@ -13,4 +13,4 @@ jobs:
           - name: "Checkout ${{ github.repository }}"
             uses: actions/checkout@v1
           - name: Lint bash scripts
-            uses: azohra/shell-linter@latest
+            uses: Azbagheri/shell-linter@latest
