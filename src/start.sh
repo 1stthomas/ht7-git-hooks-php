@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# shellcheck source=src/functions/base.sh
 source "$(pwd)/functions/base.sh"
 
 
