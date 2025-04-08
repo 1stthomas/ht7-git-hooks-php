@@ -21,7 +21,7 @@ print_commands() {
 
     read -p "Enter your choice [1-4]: " choice
 
-    return $choice
+    return "$choice"
 }
 
 process_selection() {
