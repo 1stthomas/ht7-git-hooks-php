@@ -1,0 +1,16 @@
+name: Slim
+run-name: Reduced lint and tests
+
+on:
+  push:
+    branches: [ master, develop ]
+    # branches-ignore: [ master, develop ]
+
+jobs:
+    lint:
+        runs-on: ubuntu-latest
+        steps:
+          - name: "Checkout ${{ github.repository }}"
+            uses: actions/checkout@v1
+          - name: Lint bash scripts
+            uses: azohra/shell-linter@latest
