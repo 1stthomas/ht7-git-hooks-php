@@ -34,14 +34,14 @@ EOF
 
 print_commands() {
     echo -e "Please select one of the following commands:"
-    echo -e " 1) Syntax Check"
+    echo -e " 1) PHP Syntax Check"
     echo -e " 2) PHPStan"
     echo -e " 3) PHP CS Fixer"
     echo -e " 4) PHPPHPUnit"
 
     php -v
 
-    read -p "Enter your choice [1-4]: " choice
+    read -pr "Enter your choice [1-4]: " choice
 
     return "$choice"
 }
@@ -54,6 +54,7 @@ process_selection() {
             # php -l src/functions/base.sh
             ;;
         2)
+            # shellcheck source=src/hooks/phpstan.sh
             source "$(pwd)/hooks/phpstan.sh"
             ;;
         3)
