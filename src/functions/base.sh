@@ -54,8 +54,9 @@ process_selection() {
             # php -l src/functions/base.sh
             ;;
         2)
-            # shellcheck source=src/hooks/phpstan.sh
-            source "$(pwd)/src/hooks/phpstan.sh"
+            # shellcheck source=../hooks/phpstan.sh
+            source "../hooks/phpstan.sh"
+            # source "$(pwd)/src/hooks/phpstan.sh"
             ;;
         3)
             echo -e "\n=====PHP CS Fixer - Not implemented ====="
