@@ -41,7 +41,7 @@ print_commands() {
 
     php -v
 
-    read -pr "Enter your choice [1-4]: " choice
+    read -rp "Enter your choice [1-4]: " choice
 
     return "$choice"
 }
@@ -54,9 +54,9 @@ process_selection() {
             # php -l src/functions/base.sh
             ;;
         2)
-            # shellcheck source=../hooks/phpstan.sh
-            source "../hooks/phpstan.sh"
-            # source "$(pwd)/src/hooks/phpstan.sh"
+            pwd
+            # shellcheck source=hooks/phpstan.sh
+            source "hooks/phpstan.sh"
             ;;
         3)
             echo -e "\n=====PHP CS Fixer - Not implemented ====="
