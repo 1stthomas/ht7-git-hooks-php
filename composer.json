@@ -1,5 +1,5 @@
 {
-    "name": "ht7/ht7-git-hooks",
+    "name": "ht7/ht7-git-hooks-php",
     "type": "ht7-git-hooks",
     "description": "A library bash hook which can be used bei git hooks.",
     "keywords": ["php", "ht7", "lint", "test", "php-unit"],
@@ -14,14 +14,30 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    },
+    "extra": {
+        "installer-paths": {
+            "src/": ["type:ht7-git-hooks"]
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "https://github.com/1stthomas/ht7-git-hooks-base.git"
+        }
+    ],
     "require": {
-        "php": "^8.2"
+        "php": "^8.2",
+        "ht7/ht7-git-hooks-base": "dev-master"
     },
     "require-dev": {
+        "composer/installers": "^2.3",
         "friendsofphp/php-cs-fixer": "^3.64",
         "phpstan/phpstan": "^2.0",
         "phpstan/phpstan-phpunit": "^2.0",
@@ -29,6 +45,6 @@
         "phpunit/phpunit": "^11.4"
     },
     "support": {
-        "source": "https://github.com/1stthomas/ht7-git-hooks"
+        "source": "https://github.com/1stthomas/ht7-git-hooks-php"
     }
 }
