@@ -15,6 +15,6 @@ jobs:
           - name: Lint bash scripts
             uses: Azbagheri/shell-linter@latest
             with:
-              path: "**/*.sh"
+              exclude-paths: "LICENSE"
           - name: Validate composer.json
             run: composer validate --no-check-publish --strict
