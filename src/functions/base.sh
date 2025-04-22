@@ -55,7 +55,7 @@ process_selection() {
             ;;
         2)
             pwd
-            # shellcheck source=hooks/phpstan.sh
+            # shellcheck source=src/hooks/phpstan.sh
             source "hooks/phpstan.sh"
             ;;
         3)
