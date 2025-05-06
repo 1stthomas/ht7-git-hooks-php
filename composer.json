@@ -11,6 +11,11 @@
             "role": "Developer"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Ht7\\Composer\\Scripts\\": "src/php/"
+        }
+    },
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
@@ -43,6 +48,14 @@
         "phpstan/phpstan-phpunit": "^2.0",
         "phpunit/phpcov": "^10.0.0",
         "phpunit/phpunit": "^11.4"
+    },
+    "scripts": {
+        "post-package-install": [
+            ".composer/init.sh"
+        ],
+        "post-package-update":  [
+            ".composer/update.sh"
+        ]
     },
     "support": {
         "source": "https://github.com/1stthomas/ht7-git-hooks-php"
