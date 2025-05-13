@@ -5,8 +5,8 @@ TARGET_DIR=".git/hooks/ht7/"
 
 # Create the target directory if it doesn't exist
 if [ ! -d "$TARGET_DIR" ]; then
-    mkdir -p "$TARGET_DIR"
-    echo "Created target directory: $TARGET_DIR"
+  mkdir -p "$TARGET_DIR"
+  echo "Created target directory: $TARGET_DIR"
 fi
 
 # Copy all files and folders from source to target
