@@ -50,10 +50,10 @@
         "phpunit/phpunit": "^11.4"
     },
     "scripts": {
-        "post-package-install": [
+        "post-install-cmd": [
             ".composer/install.sh"
         ],
-        "post-package-update":  [
+        "post-update-cmd":  [
             ".composer/update.sh"
         ]
     },
