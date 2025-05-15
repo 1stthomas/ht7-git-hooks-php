@@ -51,7 +51,7 @@
     },
     "scripts": {
         "post-package-install": [
-            ".composer/init.sh"
+            ".composer/install.sh"
         ],
         "post-package-update":  [
             ".composer/update.sh"
