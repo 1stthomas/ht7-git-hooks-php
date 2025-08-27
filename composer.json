@@ -34,7 +34,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url":  "https://github.com/1stthomas/ht7-git-hooks-base.git"
+            "url":  "https://github.com/1stthomas/ht7-git-hooks-base"
         }
     ],
     "require": {
